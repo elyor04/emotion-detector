@@ -25,7 +25,4 @@ bash Miniconda3-latest-Linux-x86_64.sh
 sudo apt -y install nvidia-driver-450
 sudo reboot
 ```
-Check the installation
-```
-nvidia-smi
-```
+* check the installation by running `nvidia-smi`
