@@ -18,7 +18,8 @@ curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -o Mi
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
-### install NVIDIA GPU driver
+### Install NVIDIA GPU driver and reboot
 ```
-
+sudo apt -y install nvidia-driver-450
+sudo reboot
 ```
