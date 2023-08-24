@@ -48,6 +48,11 @@ source $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 python3 -m pip install --upgrade pip
 ```
 
+### Install OpenCL libraries to make OpenCV faster
+```
+sudo apt -y install opencl-headers ocl-icd-libopencl1 ocl-icd-opencl-dev
+```
+
 ### Install TensorFlow and OpenCV
 ```
 pip install --upgrade tensorflow==2.13.* opencv-python
