@@ -29,12 +29,6 @@ sudo reboot
 ```
 * check the installation by running `nvidia-smi`
 
-### Create a conda environment
-```
-conda create --name tf python=3.9
-conda activate tf
-```
-
 ### Install CUDA and cuDNN with conda and pip
 ```
 conda install -c conda-forge cudatoolkit=11.8.0
