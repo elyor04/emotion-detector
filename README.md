@@ -14,6 +14,7 @@ pip install --upgrade tensorflow opencv-python
 
 ### Install miniconda, if you don't have it
 ```
+sudo apt -y install curl
 curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -o Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
