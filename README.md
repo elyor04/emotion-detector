@@ -1,5 +1,5 @@
 # emotion-detector
-* ### works on linux, windows and macos platforms
+* ### works on linux, windows, macos and other platforms
 
 
 ## Install on Linux
