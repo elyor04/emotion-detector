@@ -7,7 +7,7 @@ from typing import Iterable
 colors: dict[str, tuple[int, int, int]] = dict()
 
 
-def visualize_box_and_label_on_image_array(
+def visualize_box_and_labels_on_image_array(
     image: cv.UMat,
     imgSize: Iterable[int],
     box: Iterable[int],
@@ -82,7 +82,9 @@ while True:
         emotions = sorted(emotions, key=(lambda x: x[1]), reverse=True)
         emotions = [f"{x} {y}%" for x, y in emotions]
 
-        visualize_box_and_label_on_image_array(img, imgSize, (x1, y1, x2, y2), emotions)
+        visualize_box_and_labels_on_image_array(
+            img, imgSize, (x1, y1, x2, y2), emotions
+        )
 
     cv.imshow("Emotions Detector", img)
     if cv.waitKey(2) == 27:
