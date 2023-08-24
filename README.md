@@ -17,6 +17,13 @@ pip install --upgrade tensorflow opencv-python
 sudo apt -y install curl
 curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -o Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
+source ~/.bashrc
+```
+
+### Create a conda environment
+```
+conda create --name tf python=3.9
+conda activate tf
 ```
 
 ### Install NVIDIA GPU driver and reboot, if you don't have it
