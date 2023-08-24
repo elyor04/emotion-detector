@@ -10,7 +10,7 @@ pip install --upgrade tensorflow opencv-python
 
 ## Install for GPU
 
-## On Linux (Ubuntu 16.04 64-bit or higher)
+## On Linux
 
 ### Install miniconda, if you don't have it
 ```
