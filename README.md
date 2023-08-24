@@ -20,12 +20,6 @@ bash Miniconda3-latest-Linux-x86_64.sh
 source ~/.bashrc
 ```
 
-### Create a conda environment
-```
-conda create --name tf python=3.9
-conda activate tf
-```
-
 ### Install NVIDIA GPU driver and reboot, if you don't have it
 * NOTE: you can choose the driver version yourself, by default I gave 450
 * search for the driver versions by running `apt search nvidia-driver`
@@ -34,6 +28,12 @@ sudo apt -y install nvidia-driver-450
 sudo reboot
 ```
 * check the installation by running `nvidia-smi`
+
+### Create a conda environment
+```
+conda create --name tf python=3.9
+conda activate tf
+```
 
 ### Install CUDA and cuDNN with conda and pip
 ```
