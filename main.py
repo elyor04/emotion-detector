@@ -56,6 +56,7 @@ imgSize = (
     int(cam.get(cv.CAP_PROP_FRAME_WIDTH)),
     int(cam.get(cv.CAP_PROP_FRAME_HEIGHT)),
 )
+cv.ocl.setUseOpenCL(True)
 
 while True:
     img = cv.UMat(cam.read()[1])
