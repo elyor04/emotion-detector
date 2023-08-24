@@ -27,7 +27,7 @@ sudo reboot
 ```
 * check the installation by running `nvidia-smi`
 
-### nstall CUDA and cuDNN with conda and pip
+### Install CUDA and cuDNN with conda and pip
 ```
 conda install -c conda-forge cudatoolkit=11.8.0
 pip install nvidia-cudnn-cu11==8.6.0.163
