@@ -31,7 +31,7 @@ sudo reboot
 ### Install CUDA and cuDNN with conda and pip
 ```
 conda install -c conda-forge cudatoolkit=11.8.0
-pip install nvidia-cudnn-cu11==8.6.0.163
+pip install --upgrade nvidia-cudnn-cu11==8.6.0.163
 ```
 
 ### Configure the system paths
