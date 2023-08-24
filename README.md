@@ -3,8 +3,6 @@
 
 
 ## Install on Linux
-
-### Install required libraries
 ```
 pip install --upgrade numpy opencv-python tensorflow keras
 ```
