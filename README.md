@@ -19,6 +19,8 @@ bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
 ### Install NVIDIA GPU driver and reboot
+* NOTE: you should choose the driver version yourself, by default I gave 450
+* you can see the available driver versions by running ``
 ```
 sudo apt -y install nvidia-driver-450
 sudo reboot
