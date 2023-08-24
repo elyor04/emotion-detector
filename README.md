@@ -4,5 +4,5 @@
 
 ## Install on Linux
 ```
-pip install --upgrade tensorflow keras opencv-python
+pip install --upgrade tensorflow opencv-python
 ```
