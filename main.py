@@ -3,6 +3,9 @@ import numpy as np
 from keras import models
 from random import randint
 from typing import Iterable
+from os import listdir
+from re import findall
+from time import time
 
 colors: dict[str, tuple[int, int, int]] = dict()
 
@@ -49,13 +52,22 @@ def visualize_box_and_labels_on_image_array(
 faceCascade = cv.CascadeClassifier("data/haarcascade_frontalface_default.xml")
 emotion_labels = ["Angry", "Disgust", "Fear", "Happy", "Neutral", "Sad", "Surprise"]
 
-model: models.Sequential = models.load_model("data/model_emotions.h5")
-cam = cv.VideoCapture(0)
+modelPath = findall("model_emotions[-]\d+[.]\d+[.]h5", " ".join(listdir("data")))
+if not modelPath:
+    print("Could not find any modul in location data/")
+    exit(0)
 
+modelPath = f"data/{modelPath[0]}"
+print(f"Loading modul: {modelPath}")
+model: models.Sequential = models.load_model(modelPath)
+
+cam = cv.VideoCapture(0)
 imgSize = (
     int(cam.get(cv.CAP_PROP_FRAME_WIDTH)),
     int(cam.get(cv.CAP_PROP_FRAME_HEIGHT)),
 )
+
+prevTime = 0
 cv.ocl.setUseOpenCL(True)
 
 while True:
@@ -86,7 +98,13 @@ while True:
             img, imgSize, (x1, y1, x2, y2), emotions
         )
 
+    currTime = time()
+    fps = int(1 / (currTime - prevTime))
+    prevTime = currTime
+
+    cv.putText(img, f"FPS: {fps}", (5, 35), cv.FONT_HERSHEY_COMPLEX, 1.5, (250, 0, 0), 2)
     cv.imshow("Emotions Detector", img)
+
     if cv.waitKey(2) == 27:
         break
 
