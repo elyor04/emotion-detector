@@ -58,7 +58,7 @@ if not modelPath:
     exit(0)
 
 modelPath = f"data/{modelPath[0]}"
-print(f"Loading modul: {modelPath}")
+print(f"Loading model: {modelPath}")
 model: models.Sequential = models.load_model(modelPath)
 
 cam = cv.VideoCapture(0)
