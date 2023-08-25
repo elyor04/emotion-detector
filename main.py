@@ -102,7 +102,7 @@ while True:
     fps = int(1 / (currTime - prevTime))
     prevTime = currTime
 
-    cv.putText(img, f"FPS: {fps}", (5, 35), cv.FONT_HERSHEY_COMPLEX, 1.5, (250, 0, 0), 2)
+    cv.putText(img, f"FPS: {fps}", (5, 30), cv.FONT_HERSHEY_COMPLEX, 1.0, (250, 0, 0), 2)
     cv.imshow("Emotions Detector", img)
 
     if cv.waitKey(2) == 27:
