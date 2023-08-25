@@ -54,7 +54,7 @@ emotion_labels = ["Angry", "Disgust", "Fear", "Happy", "Neutral", "Sad", "Surpri
 
 modelPath = findall("model_emotions[-]\d+[.]\d+[.]h5", " ".join(listdir("data")))
 if not modelPath:
-    print("Could not find any modul in location data/")
+    print("Could not find any model in location data/")
     exit(0)
 
 modelPath = f"data/{modelPath[0]}"
