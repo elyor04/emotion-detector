@@ -16,6 +16,7 @@ pip install --upgrade tensorflow opencv-python
 ## On Linux
 
 ### Install NVIDIA GPU driver and reboot, if you still don't have it
+* WARNING: if you don't have NVIDIA GPU, please skip this part
 * NOTE: you can choose the driver version yourself, by default I gave 510
 * search for the driver versions by running `apt search nvidia-driver`
 ```
@@ -24,7 +25,7 @@ sudo reboot
 ```
 * check the installation by running `nvidia-smi`
 
-### Install OpenCL libraries to make OpenCV faster
+### Install OpenCL libraries
 ```
 sudo apt -y install opencl-headers ocl-icd-libopencl1 ocl-icd-opencl-dev intel-opencl-icd clinfo
 ```
