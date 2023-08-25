@@ -52,12 +52,15 @@ def visualize_box_and_labels_on_image_array(
 faceCascade = cv.CascadeClassifier("data/haarcascade_frontalface_default.xml")
 emotion_labels = ["Angry", "Disgust", "Fear", "Happy", "Neutral", "Sad", "Surprise"]
 
-modelPath = findall("model_emotions[-]\d+[.]\d+[.]h5", " ".join(listdir("data")))
+num = "[-+]?[0-9]+[.]?[0-9]*"
+pattern = f"model_emotions-{num}-{num}[.]h5"
+modelPath = findall(pattern, " ".join(listdir("data")))
+
 if not modelPath:
     print("Could not find any model in location data/")
     exit(0)
-
 modelPath = f"data/{modelPath[0]}"
+
 print(f"Loading model: {modelPath}")
 model: models.Sequential = models.load_model(modelPath)
 
