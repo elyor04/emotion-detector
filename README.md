@@ -1,5 +1,5 @@
 # emotion-detector
-* ### Works on linux, windows, macos and other platforms
+* ### Works on Linux, Windows, MacOS and other platforms
 
 
 ## Install for CPU
