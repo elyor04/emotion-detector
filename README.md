@@ -1,5 +1,5 @@
 # emotion-detector
-* ### works on linux, windows, macos and other platforms
+* ### Works on linux, windows, macos and other platforms
 
 
 ## Install for CPU
@@ -28,7 +28,7 @@ sudo reboot
 ```
 sudo apt -y install opencl-headers ocl-icd-libopencl1 ocl-icd-opencl-dev intel-opencl-icd clinfo
 ```
-* check drivers list by running `clinfo -l` (at least you should one)
+* check GPU drivers list by running `clinfo -l` (at least you should have one)
 
 ### Install OpenCV
 ```
