@@ -1,1 +1,3 @@
 .vscode
+data/emotions
+data/model_emotions.h5
