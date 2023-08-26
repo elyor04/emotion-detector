@@ -12,7 +12,7 @@ pip install --upgrade tensorflow opencv-python matplotlib scipy
 
 ## Install for GPU
 
-* ### First install Tensorflow with GPU support [here](https://www.tensorflow.org/install/pip) or [here](https://medium.com/nerd-for-tech/installing-tensorflow-with-gpu-acceleration-on-linux-f3f55dd15a9)
+* ### First install Tensorflow with GPU support [here](https://www.tensorflow.org/install/pip)
 * ### Since you have installed Tensorflow, it's time to install OpenCV with GPU support
 
 ## On Linux
