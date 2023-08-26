@@ -3,6 +3,8 @@
 
 
 ## Install for CPU
+
+### Install the libraries
 ```
 pip install --upgrade tensorflow opencv-python matplotlib scipy
 ```
