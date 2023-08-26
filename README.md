@@ -4,7 +4,7 @@
 
 ## Install for CPU
 ```
-pip install --upgrade tensorflow opencv-python
+pip install --upgrade tensorflow opencv-python matplotlib scipy
 ```
 
 
