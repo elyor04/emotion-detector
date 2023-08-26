@@ -37,7 +37,7 @@ sudo apt -y install opencl-headers ocl-icd-libopencl1 ocl-icd-opencl-dev clinfo
 ```
 * check GPU drivers list by running `clinfo -l` (at least you should have one)
 
-### Install OpenCV
+### Install OpenCV and extra-libraries
 ```
-pip install --upgrade opencv-python
+pip install --upgrade opencv-python matplotlib scipy
 ```
