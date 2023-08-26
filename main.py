@@ -59,7 +59,7 @@ modelPath = findall(pattern, " ".join(listdir("data")))
 if not modelPath:
     print("Could not find any model in location data/")
     exit(0)
-modelPath = f"data/{modelPath[0]}"
+modelPath = f"data/{modelPath[-1]}"
 
 print(f"Loading model: {modelPath}")
 model: models.Sequential = models.load_model(modelPath)
