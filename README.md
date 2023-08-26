@@ -17,8 +17,8 @@ pip install --upgrade tensorflow opencv-python
 
 ### Install NVIDIA GPU driver and reboot, if you still don't have it
 * WARNING: if you don't have NVIDIA GPU, please skip this part
-* NOTE: you can choose the driver version yourself, by default I gave 525
-* search for the driver versions by running `apt search nvidia-driver`
+* NOTE: you should choose the latest driver version yourself, by default I gave 525
+* search for the driver versions by running `apt-cache search --names-only "^nvidia-driver-[0-9]{3}$"`
 ```
 sudo apt -y install nvidia-driver-525
 sudo reboot
