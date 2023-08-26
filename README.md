@@ -25,9 +25,15 @@ sudo reboot
 ```
 * check the installation by running `nvidia-smi`
 
+### Install Intel GPU driver, just in case
+* WARNING: if you don't have Intel GPU, please skip this part
+```
+sudo apt -y install intel-opencl-icd
+```
+
 ### Install OpenCL libraries
 ```
-sudo apt -y install opencl-headers ocl-icd-libopencl1 ocl-icd-opencl-dev intel-opencl-icd clinfo
+sudo apt -y install opencl-headers ocl-icd-libopencl1 ocl-icd-opencl-dev clinfo
 ```
 * check GPU drivers list by running `clinfo -l` (at least you should have one)
 
