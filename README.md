@@ -41,3 +41,10 @@ sudo apt -y install opencl-headers ocl-icd-libopencl1 ocl-icd-opencl-dev clinfo
 ```
 pip install --upgrade opencv-python matplotlib scipy
 ```
+
+## On other platforms
+
+### Install OpenCV and extra-libraries
+```
+pip install --upgrade opencv-python matplotlib scipy
+```
