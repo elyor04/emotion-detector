@@ -1,9 +1,10 @@
 import cv2 as cv
 import numpy as np
 from keras import models
-from random import randint
 from typing import Iterable
+from random import randint
 from os import listdir
+from os.path import join
 from re import findall
 from time import time
 
@@ -49,22 +50,25 @@ def visualize_box_and_labels_on_image_array(
     return image
 
 
+def load_model(modelDir: str) -> models.Sequential:
+    num = "[-+]?[0-9]+[.]?[0-9]*"
+    pattern = f"model_emotions-{num}-{num}[.]h5"
+
+    modelPath = findall(pattern, " ".join(listdir(modelDir)))
+    if not modelPath:
+        print(f"Could not find any model in directory {modelDir}")
+        exit(0)
+    modelPath = join(modelDir, modelPath[-1])
+
+    print(f"Loading model: {modelPath}")
+    return models.load_model(modelPath)
+
+
 faceCascade = cv.CascadeClassifier("data/haarcascade_frontalface_default.xml")
-emotion_labels = ["Angry", "Disgust", "Fear", "Happy", "Neutral", "Sad", "Surprise"]
-
-num = "[-+]?[0-9]+[.]?[0-9]*"
-pattern = f"model_emotions-{num}-{num}[.]h5"
-modelPath = findall(pattern, " ".join(listdir("data")))
-
-if not modelPath:
-    print("Could not find any model in location data/")
-    exit(0)
-modelPath = f"data/{modelPath[-1]}"
-
-print(f"Loading model: {modelPath}")
-model: models.Sequential = models.load_model(modelPath)
-
+model = load_model("data")
 cam = cv.VideoCapture(0)
+
+emotion_labels = ["Angry", "Disgust", "Fear", "Happy", "Neutral", "Sad", "Surprise"]
 imgSize = (
     int(cam.get(cv.CAP_PROP_FRAME_WIDTH)),
     int(cam.get(cv.CAP_PROP_FRAME_HEIGHT)),
@@ -105,7 +109,9 @@ while True:
     fps = int(1 / (currTime - prevTime))
     prevTime = currTime
 
-    cv.putText(img, f"FPS: {fps}", (5, 30), cv.FONT_HERSHEY_COMPLEX, 1.0, (250, 0, 0), 2)
+    cv.putText(
+        img, f"FPS: {fps}", (5, 30), cv.FONT_HERSHEY_COMPLEX, 1.0, (250, 0, 0), 2
+    )
     cv.imshow("Emotions Detector", img)
 
     if cv.waitKey(2) == 27:
