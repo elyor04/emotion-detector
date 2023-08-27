@@ -1,5 +1,5 @@
 # emotion-detector
-* ### Works on Linux, Windows, MacOS and other platforms
+* ### Works on Linux, Windows, MacOS
 
 
 <div align="center">
@@ -50,7 +50,7 @@ sudo apt -y install opencl-headers ocl-icd-libopencl1 ocl-icd-opencl-dev clinfo
 pip install --upgrade opencv-python matplotlib scipy
 ```
 
-## On other platforms
+## On the other platforms
 
 ### Install OpenCV and extra-libraries
 ```
