@@ -114,7 +114,7 @@ while True:
     )
     cv.imshow("Emotions Detector", img)
 
-    if cv.waitKey(2) == 27:
+    if cv.waitKey(2) == 27:  # esc
         break
 
 cam.release()
