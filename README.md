@@ -4,9 +4,7 @@
 
 <div align="center">
 <h2>How does the program look like?</h2>
-
-![](data/emotions.gif)
-
+<img src="https://github.com/elyor04/emotion-detector/blob/main/data/emotions.gif" alt="Emotions"/><br>
 </div>
 
 
