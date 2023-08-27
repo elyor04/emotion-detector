@@ -2,6 +2,14 @@
 * ### Works on Linux, Windows, MacOS and other platforms
 
 
+<div align="center">
+<h2>How does the program look like?</h2>
+
+![](data/emotions.gif)
+
+</div>
+
+
 ## Install for CPU
 
 ### Install the libraries
