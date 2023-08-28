@@ -1,5 +1,5 @@
 # emotion-detector
-* ### Works on Linux, Windows, MacOS
+* ### Works on Linux, Windows and MacOS
 
 
 <div align="center">
