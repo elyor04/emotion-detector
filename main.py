@@ -101,9 +101,7 @@ while True:
         emotions = sorted(emotions, key=(lambda x: x[1]), reverse=True)
         emotions = [f"{x} {y}%" for x, y in emotions]
 
-        visualize_box_and_labels_on_image_array(
-            img, imgSize, (x1, y1, x2, y2), emotions
-        )
+        visualize_box_and_labels(img, imgSize, (x1, y1, x2, y2), emotions)
 
     currTime = time()
     fps = int(1 / (currTime - prevTime))
