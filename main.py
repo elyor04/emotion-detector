@@ -1,7 +1,6 @@
 import cv2 as cv
 import numpy as np
 from keras import models
-from typing import Iterable
 from random import randint
 from os import listdir
 from os.path import join
@@ -13,9 +12,9 @@ colors: dict[str, tuple[int, int, int]] = dict()
 
 def visualize_box_and_labels(
     image: cv.UMat,
-    imgSize: Iterable[int],
-    box: Iterable[int],
-    labels: Iterable[str],
+    imgSize: tuple[int, int],
+    box: tuple[int, int, int, int],
+    labels: list[str],
 ) -> np.ndarray:
     wd, hg = imgSize
     xmin, ymin, xmax, ymax = box
