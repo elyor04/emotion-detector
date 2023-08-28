@@ -11,7 +11,7 @@ from time import time
 colors: dict[str, tuple[int, int, int]] = dict()
 
 
-def visualize_box_and_labels_on_image_array(
+def visualize_box_and_labels(
     image: cv.UMat,
     imgSize: Iterable[int],
     box: Iterable[int],
