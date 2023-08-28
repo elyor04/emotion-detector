@@ -1,11 +1,11 @@
 import cv2 as cv
+import numpy as np
 from keras import models
-from numpy import array
+from random import randint
 from os import listdir
 from os.path import join
 from re import findall
 from time import time
-from random import randint
 
 colors: dict[str, tuple[int, int, int]] = dict()
 
@@ -39,7 +39,7 @@ def visualize_box_and_labels(
 
         x1, x2 = max(xmin - 2, 0), min(gtx + 2, wd)
         y1, y2 = min((gts[0][1] * i) + ymin + (i * 12), hg), min(gty + 12, hg)
-        pts = array([[x1, y1], [x2, y1], [x2, y2], [x1, y2]], np.int32)
+        pts = np.array([[x1, y1], [x2, y1], [x2, y2], [x1, y2]], np.int32)
 
         cv.drawContours(image, [pts], -1, color, -1)
         cv.putText(
