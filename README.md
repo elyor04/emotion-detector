@@ -4,7 +4,7 @@
 
 <div align="center">
 <h2>How does the program look like?</h2>
-<a href="https://postimages.org/" target="_blank"><img src="https://i.postimg.cc/SR7ZCdgr/github-emotions.gif" alt="Emotions"/></a><br>
+  <a href="https://postimg.cc/QKCkrQG9" target="_blank"><img src="https://i.postimg.cc/QKCkrQG9/github-emotions.gif" alt="Emotions"/></a><br>
 </div>
 
 
