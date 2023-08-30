@@ -2,11 +2,11 @@
 * ### Works on Linux, Windows and MacOS
 
 
-<h2 align="center">How does the program look like?</h2>
+<div align="center">
+<h2>How does the program look like?</h2>
+<a href="https://postimg.cc/QKCkrQG9" target="_blank"><img src="https://i.postimg.cc/QKCkrQG9/github-emotions.gif" border="0" alt="Emotions"/></a><br>
+</div>
 
-![Emotions](https://i.ibb.co/R6mL2df/github-emotions.gif)
-
-<br>
 
 ## Install for CPU
 
