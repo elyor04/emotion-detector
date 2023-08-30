@@ -4,7 +4,7 @@
 
 <h2 align="center">How does the program look like?</h2>
 
-[![Emotions](https://i.ibb.co/R6mL2df/github-emotions.gif)](https://ibb.co/HPsm736)
+[Emotions](https://i.ibb.co/R6mL2df/github-emotions.gif)
 
 <br>
 
