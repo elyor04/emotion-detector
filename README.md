@@ -4,7 +4,7 @@
 
 <div align="center">
 <h2>How does the program look like?</h2>
-<a href="https://yourimageshare.com/ib/Gs2rLTOr2r"><img src="https://yourimageshare.com/ib/Gs2rLTOr2r.webp" title="Image - Gs2rLTOr2r - yourimageshare.com" alt="Image - Gs2rLTOr2r - yourimageshare.com"></a><center><a target="_blank" href="https://yourimageshare.com"><small>Image hosting</small></a></center><br>
+<img src="https://pasteboard.co/n1sB9sHckcxO.gif" alt="Emotions"><br>
 </div>
 
 
