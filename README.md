@@ -4,7 +4,7 @@
 
 <div align="center">
 <h2>How does the program look like?</h2>
-<img src="https://pasteboard.co/n1sB9sHckcxO.gif" alt="Emotions"><br>
+<img src="https://pasteboard.co/n1sB9sHckcxO.gif" alt="Emotions" border="0"><br>
 </div>
 
 
